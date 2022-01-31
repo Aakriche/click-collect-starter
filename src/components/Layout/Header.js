@@ -59,7 +59,7 @@ function Header() {
 		
 		
 			<li className="nav-item dropdown" onClick={() => setShow(!show)} >
-				<a className={`nav-link dropdown-toggle ${show && 'show'}`} >
+				<a className={`nav-link dropdown-toggle ${show && 'show'}`}>
 				<i className="fas fa-shopping-cart"></i> <span className="badge bg-orange"></span></a>
 				<CartDropdown show={show} handleOnClick={handleOnClick}/>
 		   </li>  

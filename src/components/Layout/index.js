@@ -5,7 +5,7 @@ import Header from './Header'
 function Layout({ children }) {
    return(
 		<div className="layout">
-			<Header />
+			<Header /> 
 			{children}
 			<Footer />	
 		</div>

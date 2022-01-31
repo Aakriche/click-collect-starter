@@ -2,9 +2,8 @@ import React from 'react'
 import Filters from './Filters'
 
 // sidebar
-function Sidebar() {
-  const filters = ['Top', 'Bottom', 'Jacket']
-  const categories = ['Women', 'Men', 'Kids', 'Accessories']
+function Sidebar({ categories, filters }) {
+  
     return(
     <div className="col-md-4 order-md-1 col-lg-3 sidebar-filter">
       <h6 className="text-uppercase font-weight-bold mb-3">Categories</h6>

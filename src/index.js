@@ -5,6 +5,7 @@ import {
   InMemoryCache,
   ApolloProvider
 } from "@apollo/client";
+import FiltersProvider from "./context";
 
 import App from "./App";
 
@@ -16,7 +17,9 @@ const client = new ApolloClient({
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-    <App />
+      <FiltersProvider>
+      <App />
+    </FiltersProvider>
     </ApolloProvider>
   </React.StrictMode>,
   document.getElementById("root")

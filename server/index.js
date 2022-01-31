@@ -1,10 +1,10 @@
 const PORT = 2021
 const express = require('express');
-const cors = require('cors')
-const app = express()
-const mongoDBClient = require('./mongoClient')
-const { graphqlHTTP } = require('express-graphql')
-const schema = require('./schemas/index.js')
+const cors = require('cors');
+const app = express();
+const mongoDBClient = require('./mongoClient');
+const { graphqlHTTP } = require('express-graphql');
+const schema = require('./schemas/index.js');
 app.use(cors())
 
 app.get('/', (req, res) => {
